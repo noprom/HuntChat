@@ -27,6 +27,7 @@
 		8059FC691B8ACC1D001FB26D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8059FC6B1B8ACC1D001FB26D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8059FC711B8AD07B001FB26D /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		80A1A1F11B918590005F68F1 /* HuntChat-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HuntChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		DD1AAA9C66B33D5B10CA5AD3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +79,7 @@
 				8059FC661B8ACC1D001FB26D /* Assets.xcassets */,
 				8059FC681B8ACC1D001FB26D /* LaunchScreen.storyboard */,
 				8059FC6B1B8ACC1D001FB26D /* Info.plist */,
+				80A1A1F11B918590005F68F1 /* HuntChat-Bridging-Header.h */,
 			);
 			path = HuntChat;
 			sourceTree = "<group>";
@@ -119,6 +121,7 @@
 		8059FC541B8ACC1D001FB26D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = noprom;
 				TargetAttributes = {
@@ -310,10 +313,13 @@
 			baseConfigurationReference = 721531302F452AFB0BAD96F6 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HuntChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huntdreams.ios.HuntChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HuntChat/HuntChat-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -322,10 +328,12 @@
 			baseConfigurationReference = 65BE8AE6D056E572CBC781C3 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = HuntChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.huntdreams.ios.HuntChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "HuntChat/HuntChat-Bridging-Header.h";
 			};
 			name = Release;
 		};
